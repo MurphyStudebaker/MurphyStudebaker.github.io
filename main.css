@@ -1,0 +1,285 @@
+/* Home Page */
+/* Colors */
+@font-face {
+  font-family: 'Uni Sans';
+  src: url("C:/Users/Murphy/Documents/website/resources/Uni-Sans.otf") format("woff"); }
+@font-face {
+  font-family: 'Raleway';
+  src: url("https://fonts.google.com/specimen/Raleway"); }
+body {
+  background-color: #eeecda; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+#menu {
+  background-color: #080e3b;
+  padding: 15%; }
+  #menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #eeecda; }
+  #menu .nav {
+    padding-top: 30%;
+    list-style: none; }
+    #menu .nav a {
+      text-decoration: none;
+      color: #eeecda;
+      font-family: "Raleway";
+      padding-top: 1em;
+      transition: margin-left .8s; }
+      #menu .nav a:hover {
+        color: #d1492d;
+        cursor: pointer;
+        margin-left: .5em; }
+      #menu .nav a:active {
+        color: #d1492d;
+        margin-left: .5em; }
+    #menu .nav li {
+      padding-top: 1em; }
+    #menu .nav #gap {
+      padding-top: 2em; }
+  #menu h1 {
+    color: #eeecda;
+    font-family: "Playfair Display";
+    font-size: 2em;
+    font-weight: 'black'; }
+  #menu .social {
+    list-style: none;
+    padding-top: 1em; }
+    #menu .social li {
+      display: inline-block;
+      width: 1.3em;
+      padding-right: .5em;
+      fill: #eeecda; }
+      #menu .social li:hover {
+        fill: #d1492d;
+        cursor: pointer; }
+
+.content {
+  position: relative;
+  padding-left: 20%; }
+  .content h2 {
+    font-family: "Playfair Display";
+    color: #080e3b;
+    font-size: 3em;
+    padding-left: 10%;
+    padding-top: 15%;
+    width: 70%; }
+  .content .red {
+    color: #d1492d; }
+  .content .no-padding {
+    padding-top: 0; }
+  .content .tag {
+    font-family: "Raleway";
+    color: #666666;
+    padding-left: 10%;
+    padding-top: 5%; }
+  .content .res {
+    padding-top: 15%; }
+  .content #copyright {
+    font-family: "Raleway";
+    font-size: .8em;
+    color: #666666;
+    text-align: center;
+    padding-bottom: 1em; }
+
+/* Colors */
+#menu .action {
+  padding: 2%;
+  margin-top: 6%;
+  margin-right: 5%;
+  background-color: Transparent;
+  color: #eeecda;
+  border: thin solid #eeecda;
+  width: 6em;
+  font-family: "Raleway";
+  transition: border-radius .8s ease-in-out; }
+  #menu .action:hover {
+    background-color: #d1492d;
+    cursor: pointer;
+    border-radius: 1em; }
+
+.project .more {
+  padding: 2%;
+  margin-top: 10%;
+  background-color: #eeecda;
+  color: #080e3b;
+  border: thin solid #080e3b;
+  width: 10em;
+  font-family: "Raleway";
+  border-radius: 1em;
+  transition: width .8s ease-in-out; }
+  .project .more:hover {
+    background-color: #eeecda;
+    cursor: pointer;
+    width: 40%; }
+  .project .more a {
+    text-decoration: none; }
+
+@font-face {
+  font-family: 'Uni Sans';
+  src: url("C:/Users/Murphy/Documents/website/resources/Uni-Sans.otf") format("woff"); }
+@font-face {
+  font-family: 'Raleway';
+  src: url("https://fonts.google.com/specimen/Raleway"); }
+.project {
+  margin: 3%;
+  background-color: #d1492d;
+  padding: 10%; }
+  .project .heading {
+    font-size: 2.6em;
+    font-family: "Playfair Display";
+    color: #080e3b;
+    display: inline-block;
+    width: 28%; }
+  .project .skills {
+    text-transform: uppercase;
+    color: #080e3b;
+    font-family: "Raleway";
+    padding-bottom: 1em;
+    word-spacing: 1.2em; }
+  .project .description {
+    color: #eeecda;
+    font-family: "Raleway";
+    font-size: 1em;
+    display: inline-block;
+    line-height: 2em; }
+  .project .left {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 20%;
+    width: 50%; }
+
+.content {
+  background-color: #eeecda; }
+  .content .about .headshot {
+    display: inline-block;
+    width: 50%;
+    filter: grayscale(100%);
+    margin: 0; }
+  .content .about .block {
+    display: inline-block;
+    background-color: #d1492d;
+    width: 40%; }
+    .content .about .block .tag {
+      font-family: "Playfair Display";
+      color: #080e3b;
+      border: 2px solid #d1492d; }
+
+.timeline .date {
+  font-family: "Playfair Display";
+  font-size: 2em;
+  color: #080e3b;
+  padding: 5% 10% 2% 10%; }
+.timeline .description {
+  width: 60%;
+  font-family: "Raleway";
+  font-size: 1em;
+  color: #666666;
+  padding: 0 10% 10% 10%; }
+
+/*Slide Out Menu*/
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none; }
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #080e3b;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(3) {
+  transform-origin: 0% 100%; }
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(1px, 0);
+  background: #d1492d; }
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(0, 0); }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  height: 100vh;
+  position: absolute;
+  width: 50%;
+  min-width: 200px;
+  max-width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #080e3b;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ div {
+  transform: none; }
+
+.container .content {
+  width: 100%;
+  transition: width 0.4s cubic-bezier(0.77, 0.2, 0.05, 1), transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#menuToggle input:checked ~ .content {
+  width: 75%;
+  transform: translate(300px, 0); }
+
+/*# sourceMappingURL=main.css.map */
