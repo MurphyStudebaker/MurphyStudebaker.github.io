@@ -1,10 +1,10 @@
-//JavaScript
 var hamburger = document.querySelector(".hamburger");
 var menu = document.querySelector(".menu");
 var content = document.querySelector(".content");
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var active = true;
 
+/* Run the setInit() function upon window load */
 if(window.addEventListener){
     window.addEventListener('load',setInit,false); //W3C
 }
@@ -12,6 +12,7 @@ else{
     window.attachEvent('onload',setInit); //IE
 }
 
+/* Width of viewport determines whether or not the menu begins as toggled*/
 function setInit() {
   if (width <= 800) //portrait tablet or phone
   {
@@ -25,6 +26,7 @@ function setInit() {
   }
 }
 
+/* Controls the menu toggle */
 hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   if (active) {
