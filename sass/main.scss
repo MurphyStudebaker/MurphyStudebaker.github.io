@@ -1,8 +1,13 @@
+/* Variable Declarations */
 @import "./helpers/color";
 @import './helpers/variables';
+
+/* Styling for Pages*/
 @import "./pages/home";
 @import "./pages/content";
+@import './pages/about';
+
+/* Styling for Components */
 @import "./components/button";
 @import './components/project';
-@import './pages/about';
 @import './components/hamburger.scss';

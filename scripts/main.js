@@ -44,6 +44,7 @@ hamburger.addEventListener("click", function() {
   }
 });
 
+/* Checks browser width to adjust menu functionality */
 function setSize() {
   var width = window.innerWidth;
   if (width < 750) {
@@ -53,6 +54,7 @@ function setSize() {
   }
 }
 
+/* Slides menu in from left */
 function showMenu() {
   active = true; //now active
   menu.style.left = 0;
@@ -63,6 +65,7 @@ function showMenu() {
   }
 }
 
+/* Slides menu back off screen */
 function hideMenu() {
   active = false; //no longer active
   menu.style.left = -330 + "px";

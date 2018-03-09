@@ -1,3 +1,4 @@
+/* Variable Declarations */
 /* Colors */
 @font-face {
   font-family: 'Uni Sans';
@@ -5,6 +6,7 @@
 @font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
+/* Styling for Pages*/
 /* Menu Styling */
 body {
   background-color: #eeecda; }
@@ -76,6 +78,7 @@ body {
         fill: #d1492d;
         cursor: pointer; }
 
+/* Content of the Home Page */
 .content {
   position: relative;
   transition: width .5s ease, left .5s ease; }
@@ -102,6 +105,24 @@ body {
     text-align: center;
     padding-bottom: 1em; }
 
+.content {
+  background-color: #eeecda; }
+  .content .about .headshot {
+    display: inline-block;
+    width: 50%;
+    filter: grayscale(100%);
+    margin: 0; }
+  .content .about .block {
+    display: inline-block;
+    background-color: #d1492d;
+    width: 40%; }
+    .content .about .block .tag {
+      font-family: "Playfair Display";
+      color: #080e3b;
+      border: 2px solid #d1492d; }
+
+/* Styling for Components */
+/* Styling for different site buttons */
 .menu .action {
   padding: 2%;
   margin-top: 6%;
@@ -164,22 +185,6 @@ body {
       display: inline-block;
       padding-left: 20%;
       width: 50%; }
-
-.content {
-  background-color: #eeecda; }
-  .content .about .headshot {
-    display: inline-block;
-    width: 50%;
-    filter: grayscale(100%);
-    margin: 0; }
-  .content .about .block {
-    display: inline-block;
-    background-color: #d1492d;
-    width: 40%; }
-    .content .about .block .tag {
-      font-family: "Playfair Display";
-      color: #080e3b;
-      border: 2px solid #d1492d; }
 
 /*!
  * Hamburgers
