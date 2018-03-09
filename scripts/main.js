@@ -38,6 +38,7 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
   if (active) {
     hideMenu();
+    setSize(); //re-check size in case window is changed
   } else {
     showMenu();
   }
