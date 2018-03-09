@@ -1,0 +1,40 @@
+.menu {
+  .action {
+    padding: 2%;
+    margin-top: 6%;
+    margin-right: 5%;
+    background-color: Transparent;
+    color: $light;
+    border: thin solid $light;
+    width: 6em;
+    font-family: $text-font;
+    transition: border-radius .8s ease-in-out;
+    &:hover {
+      background-color: $highlight;
+      cursor: pointer;
+      border-radius: 1em;
+    }
+  }
+}
+
+.project {
+  .more {
+    padding: 2%;
+    margin-top: 10%;
+    background-color: $light;
+    color: $dark;
+    border: thin solid $dark;
+    width: 10em;
+    font-family: $text-font;
+    border-radius: 1em;
+    transition: width .8s ease-in-out;
+    &:hover {
+      background-color: $light;
+      cursor: pointer;
+      width: 40%;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
