@@ -1,0 +1,38 @@
+//content
+.content {
+  position: relative;
+  transition: width .5s ease,
+              left .5s ease;
+  h2 {
+    font-family: $heading-font;
+    color: $dark;
+    font-size: 3em;
+    padding-left: 10%;
+    padding-top: 10%;
+    width: 70%
+  }
+  .red {
+      color: $highlight;
+    }
+  .no-padding {
+    padding-top: 0;
+  }
+  .tag {
+    font-family: $text-font;
+    color: $med;
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+
+  .res {
+    padding-top: 15%;
+  }
+
+  #copyright {
+    font-family: $text-font;
+    font-size: .8em;
+    color: $med;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+}

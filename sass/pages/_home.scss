@@ -1,0 +1,94 @@
+/* Home Page */
+@import '../helpers/color';
+@import '../helpers/variables';
+
+body {
+  background-color: $light;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.toggle {
+  position: fixed;
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 2; //at front
+  button:focus {outline:0;}
+}
+
+.hamburger {
+  color: $dark;
+  transition: color .5s ease;
+}
+
+.menu {
+  background-color: $dark;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5%;
+  padding-left: 5%;
+  transition: left .5s ease;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $light;
+  }
+
+  .nav {
+    padding-top: 30%;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $light;
+      font-family: $text-font;
+      padding-top: 1em;
+      transition: margin-left .8s;
+      &:hover {
+        color: $highlight;
+        cursor: pointer;
+        margin-left: .5em;
+      }
+      &:active{
+        color: $highlight;
+        margin-left: .5em;
+      }
+    }
+    li {
+      padding-top: 1em;
+    }
+
+    #gap {
+      padding-top: 2em;
+    }
+  }
+
+  h1 {
+    color: $light;
+    font-family: $heading-font;
+    font-size: 2em;
+    font-weight: 'black';
+  }
+
+  .social {
+    list-style: none;
+    padding-top: 1em;
+
+    li {
+      display: inline-block;
+      width: 1.3em;
+      padding-right: .5em;
+      fill: $light;
+
+      &:hover {
+        fill: $highlight;
+        cursor: pointer;
+      }
+    }
+  }
+}

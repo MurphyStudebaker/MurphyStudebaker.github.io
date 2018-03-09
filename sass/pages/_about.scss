@@ -1,0 +1,23 @@
+//about page
+.content {
+  background-color: $light;
+
+  .about {
+    .headshot {
+      display: inline-block;
+      width: 50%;
+      filter: grayscale(100%);
+      margin: 0;
+    }
+    .block {
+      display: inline-block;
+      background-color: $highlight;
+      width: 40%;
+      .tag {
+        font-family: $heading-font;
+        color: $dark;
+        border: 2px solid $highlight;
+      }
+    }
+  }
+}
