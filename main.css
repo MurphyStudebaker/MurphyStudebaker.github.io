@@ -1,4 +1,3 @@
-/* Home Page */
 /* Colors */
 @font-face {
   font-family: 'Uni Sans';
@@ -6,6 +5,7 @@
 @font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
+/* Menu Styling */
 body {
   background-color: #eeecda; }
 
@@ -32,7 +32,7 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 75px;
   padding-left: 5%;
   transition: left .5s ease; }
   .menu a {
@@ -46,31 +46,31 @@ body {
       text-decoration: none;
       color: #eeecda;
       font-family: "Raleway";
-      padding-top: 1em;
+      padding-top: 1rem;
       transition: margin-left .8s; }
       .menu .nav a:hover {
         color: #d1492d;
         cursor: pointer;
-        margin-left: .5em; }
+        margin-left: .5rem; }
       .menu .nav a:active {
         color: #d1492d;
-        margin-left: .5em; }
+        margin-left: .5rem; }
     .menu .nav li {
-      padding-top: 1em; }
+      padding-top: 1rem; }
     .menu .nav #gap {
-      padding-top: 2em; }
+      padding-top: 2rem; }
   .menu h1 {
     color: #eeecda;
     font-family: "Playfair Display";
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 'black'; }
   .menu .social {
     list-style: none;
-    padding-top: 1em; }
+    padding-top: 1rem; }
     .menu .social li {
       display: inline-block;
-      width: 1.3em;
-      padding-right: .5em;
+      width: 1.3rem;
+      padding-right: .5rem;
       fill: #eeecda; }
       .menu .social li:hover {
         fill: #d1492d;
@@ -95,8 +95,6 @@ body {
     color: #666666;
     padding-left: 10%;
     padding-top: 5%; }
-  .content .res {
-    padding-top: 15%; }
   .content #copyright {
     font-family: "Raleway";
     font-size: .8em;
@@ -104,7 +102,6 @@ body {
     text-align: center;
     padding-bottom: 1em; }
 
-/* Colors */
 .menu .action {
   padding: 2%;
   margin-top: 6%;
@@ -120,7 +117,7 @@ body {
     cursor: pointer;
     border-radius: 1em; }
 
-.project .more {
+.projects .more {
   padding: 2%;
   margin-top: 10%;
   background-color: #eeecda;
@@ -130,46 +127,43 @@ body {
   font-family: "Raleway";
   border-radius: 1em;
   transition: width .8s ease-in-out; }
-  .project .more:hover {
+  .projects .more:hover {
     background-color: #eeecda;
     cursor: pointer;
     width: 40%; }
-  .project .more a {
+  .projects .more a {
     text-decoration: none; }
 
-@font-face {
-  font-family: 'Uni Sans';
-  src: url("C:/Users/Murphy/Documents/website/resources/Uni-Sans.otf") format("woff"); }
-@font-face {
-  font-family: 'Raleway';
-  src: url("https://fonts.google.com/specimen/Raleway"); }
-.project {
-  margin: 3%;
-  background-color: #d1492d;
-  padding: 10%; }
-  .project .heading {
-    font-size: 2.6em;
-    font-family: "Playfair Display";
-    color: #080e3b;
-    display: inline-block;
-    width: 28%; }
-  .project .skills {
-    text-transform: uppercase;
-    color: #080e3b;
-    font-family: "Raleway";
-    padding-bottom: 1em;
-    word-spacing: 1.2em; }
-  .project .description {
-    color: #eeecda;
-    font-family: "Raleway";
-    font-size: 1em;
-    display: inline-block;
-    line-height: 2em; }
-  .project .left {
-    vertical-align: top;
-    display: inline-block;
-    padding-left: 20%;
-    width: 50%; }
+/* Styling for Project Boxes */
+.projects {
+  list-style: none; }
+  .projects li {
+    margin: 3%;
+    background-color: #d1492d;
+    padding: 10%; }
+    .projects li .heading {
+      font-size: 2.6em;
+      font-family: "Playfair Display";
+      color: #080e3b;
+      display: inline-block;
+      width: 28%; }
+    .projects li .skills {
+      text-transform: uppercase;
+      color: #080e3b;
+      font-family: "Raleway";
+      padding-bottom: 1em;
+      word-spacing: 1.2em; }
+    .projects li .description {
+      color: #eeecda;
+      font-family: "Raleway";
+      font-size: 1em;
+      display: inline-block;
+      line-height: 2em; }
+    .projects li .left {
+      vertical-align: top;
+      display: inline-block;
+      padding-left: 20%;
+      width: 50%; }
 
 .content {
   background-color: #eeecda; }
@@ -186,18 +180,6 @@ body {
       font-family: "Playfair Display";
       color: #080e3b;
       border: 2px solid #d1492d; }
-
-.timeline .date {
-  font-family: "Playfair Display";
-  font-size: 2em;
-  color: #080e3b;
-  padding: 5% 10% 2% 10%; }
-.timeline .description {
-  width: 60%;
-  font-family: "Raleway";
-  font-size: 1em;
-  color: #666666;
-  padding: 0 10% 10% 10%; }
 
 /*!
  * Hamburgers

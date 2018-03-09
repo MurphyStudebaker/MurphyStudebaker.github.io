@@ -1,5 +1,4 @@
 /* Menu Styling */
-
 body {
   background-color: $light;
 }
@@ -29,8 +28,8 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 1;
-  padding-top: 20%;
-  padding-left: 20%;
+  padding-top: 75px;
+  padding-left: 5%;
   transition: left .5s ease;
 
   a {
@@ -68,8 +67,6 @@ body {
   }
 
   h1 {
-    position: relative;
-    top: 50rem;
     color: $light;
     font-family: $heading-font;
     font-size: 2rem;
