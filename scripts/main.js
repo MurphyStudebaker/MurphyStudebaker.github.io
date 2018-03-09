@@ -1,4 +1,5 @@
 var hamburger = document.querySelector(".hamburger");
+var nav = document.querySelector(".nav");
 var menu = document.querySelector(".menu");
 var content = document.querySelector(".content");
 var active = true;
@@ -17,11 +18,20 @@ function setInit() {
   setSize();
   if (small) //portrait tablet or phone
   {
+    hamburger.classList.toggle("is-active");
     hideMenu();
   } else {
     showMenu();
   }
 }
+
+/* When on mobile, hide menu when nav is clicked */
+nav.addEventListener("click", function() {
+  if (small) {
+    hamburger.classList.toggle("is-active");
+    hideMenu();
+  }
+});
 
 /* Controls the menu toggle */
 hamburger.addEventListener("click", function() {
@@ -34,7 +44,7 @@ hamburger.addEventListener("click", function() {
 });
 
 function setSize() {
-  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var width = window.innerWidth;
   if (width < 750) {
     small = true;
   } else {
@@ -47,6 +57,9 @@ function showMenu() {
   menu.style.left = 0;
   content.style.left = 300+"px";
   content.style.width = 75+'%';
+  if (small) {
+    menu.style.width = 100 + "%";
+  }
 }
 
 function hideMenu() {
@@ -54,4 +67,7 @@ function hideMenu() {
   menu.style.left = -330 + "px";
   content.style.width = 100+"%";
   content.style.left = 0;
+  if (small) {
+    menu.style.width = 250 + "px";
+  }
 }
