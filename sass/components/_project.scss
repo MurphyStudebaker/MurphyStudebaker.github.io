@@ -1,0 +1,33 @@
+//project box
+.project {
+  margin: 3%;
+  background-color: $highlight;
+  padding: 10%;
+  .heading {
+    font-size: 2.6em;
+    font-family: $heading-font;
+    color: $dark;
+    display: inline-block;
+    width: 28%;
+  }
+  .skills {
+    text-transform: uppercase;
+    color: $dark;
+    font-family: $text-font;
+    padding-bottom: 1em;
+    word-spacing: 1.2em;
+  }
+  .description {
+      color: $light;
+      font-family: $text-font;
+      font-size: 1em;
+      display: inline-block;
+      line-height: 2em;
+  }
+  .left {
+      vertical-align: top;
+      display: inline-block;
+      padding-left: 20%;
+      width: 50%;
+  }
+}
