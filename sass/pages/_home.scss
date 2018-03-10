@@ -29,7 +29,7 @@ body {
   position: fixed;
   z-index: 1;
   padding-top: 75px;
-  padding-left: 5%;
+  padding-left: 5rem;
   transition: left .5s ease;
 
   a {
@@ -39,7 +39,7 @@ body {
   }
 
   .nav {
-    padding-top: 30%;
+    padding-top: 3rem;
     list-style: none;
     a {
       text-decoration: none;
@@ -58,7 +58,7 @@ body {
       }
     }
     li {
-      padding-top: 1rem;
+      padding-top: 1.5rem;
     }
 
     #gap {
