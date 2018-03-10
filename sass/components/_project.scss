@@ -1,36 +1,28 @@
 /* Styling for Project Boxes */
 .projects {
+  margin-left: 4rem;
+  margin-top: 8rem;
   list-style: none;
   li {
-  margin: 3%;
-  background-color: $highlight;
-  padding: 10%;
-  .heading {
-    font-size: 2.6em;
-    font-family: $heading-font;
-    color: $dark;
-    display: inline-block;
-    width: 28%;
-  }
-  .skills {
-    text-transform: uppercase;
-    color: $dark;
-    font-family: $text-font;
-    padding-bottom: 1em;
-    word-spacing: 1.2em;
-  }
-  .description {
-      color: $light;
+    //clip-path: polygon(0 100%,50% 100%,100% 100%,100% 100%);
+    background-color: $highlight;
+    padding: 3rem;
+    h3 {
+      line-height: 2.2rem;
+      font-family: $heading-font;
+      color: $dark;
+      font-size: 2.5rem;
+    }
+    .skills {
+      text-transform: uppercase;
+      padding-top: .5rem;
+      color: $dark;
       font-family: $text-font;
-      font-size: 1em;
-      display: inline-block;
-      line-height: 2em;
+    }
+    .description {
+      padding-top: 1rem;
+      font-family: $text-font;
+      color: $light;
+    }
   }
-  .left {
-      vertical-align: top;
-      display: inline-block;
-      padding-left: 20%;
-      width: 50%;
-  }
-}
 }

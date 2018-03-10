@@ -20,14 +20,14 @@
 
 .projects {
   .more {
-    padding: 2%;
-    margin-top: 10%;
+    padding: .5rem 0 .5rem 0;
+    margin-top: 2rem;
     background-color: $light;
     color: $dark;
     border: thin solid $dark;
-    width: 10em;
+    width: 8rem;
     font-family: $text-font;
-    border-radius: 1em;
+    //border-radius: 1em;
     transition: width .8s ease-in-out;
     &:hover {
       background-color: $light;

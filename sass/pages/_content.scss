@@ -7,7 +7,7 @@
     font-family: $heading-font;
     color: $dark;
     font-size: 3em;
-    padding-left: 10%;
+    padding-left: 17%;
     padding-top: 10%;
     width: 70%
   }
@@ -20,15 +20,15 @@
   .tag {
     font-family: $text-font;
     color: $med;
-    padding-left: 10%;
+    padding-left: 17%;
     padding-top: 5%;
   }
 
   #copyright {
+    padding: 1rem 0 1rem 0;
     font-family: $text-font;
-    font-size: .8em;
+    font-size: .8rem;
     color: $med;
     text-align: center;
-    padding-bottom: 1em;
   }
 }
