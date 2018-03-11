@@ -139,7 +139,7 @@ body {
   border: thin solid #eeecda;
   width: 6rem;
   font-family: "Raleway";
-  transition: border-radius .5s ease-in-out; }
+  transition: border-radius .5s ease; }
   .menu .action:hover {
     background-color: #d1492d;
     cursor: pointer;
@@ -153,11 +153,12 @@ body {
   border: thin solid #080e3b;
   width: 8rem;
   font-family: "Raleway";
-  transition: width .8s ease-in-out; }
+  transition: width .5s ease-in-out, border-radius .5s ease; }
   .projects .more:hover {
     background-color: #eeecda;
     cursor: pointer;
-    width: 40%; }
+    width: 40%;
+    border-radius: .5rem; }
   .projects .more a {
     color: #080e3b;
     text-decoration: none; }
@@ -176,11 +177,13 @@ body {
       color: #080e3b;
       font-size: 2.5rem; }
     .projects li .skills {
+      font-size: 1rem;
       text-transform: uppercase;
       padding-top: .5rem;
       color: #080e3b;
       font-family: "Raleway"; }
     .projects li .description {
+      font-size: 1rem;
       padding-top: 1rem;
       font-family: "Raleway";
       color: #eeecda; }
