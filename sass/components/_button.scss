@@ -28,12 +28,10 @@
     width: 8rem;
     font-family: $text-font;
     //border-radius: 1em;
-    transition: width .5s ease-in-out,
-                border-radius .5s ease;
+    transition: border-radius .5s ease;
     &:hover {
       background-color: $light;
       cursor: pointer;
-      width: 40%;
       border-radius: .5rem;
     }
     a {

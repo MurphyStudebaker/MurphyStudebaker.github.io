@@ -153,11 +153,10 @@ body {
   border: thin solid #080e3b;
   width: 8rem;
   font-family: "Raleway";
-  transition: width .5s ease-in-out, border-radius .5s ease; }
+  transition: border-radius .5s ease; }
   .projects .more:hover {
     background-color: #eeecda;
     cursor: pointer;
-    width: 40%;
     border-radius: .5rem; }
   .projects .more a {
     color: #080e3b;
