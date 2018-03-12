@@ -1,9 +1,9 @@
 /* Styling for different site buttons */
 .menu {
   .action {
-    padding: .4rem;
-    margin-top: .5rem;
-    margin-right: .5rem;
+    position: relative;
+    top: .4rem;
+    padding: .2rem 1rem .2rem 1rem;
     background-color: Transparent;
     color: $light;
     border: thin solid $light;
@@ -20,23 +20,20 @@
 
 .projects {
   .more {
-    padding: .5rem 0 .5rem 0;
-    margin-top: 2rem;
+    padding: .5rem 3rem .5rem 3rem;
+    position: relative;
+    top: 2.5rem;
     background-color: $light;
     color: $dark;
     border: thin solid $dark;
-    width: 8rem;
     font-family: $text-font;
-    //border-radius: 1em;
     transition: border-radius .5s ease;
+    color: $dark;
+    text-decoration: none;
     &:hover {
       background-color: $light;
       cursor: pointer;
       border-radius: .5rem;
-    }
-    a {
-      color: $dark;
-      text-decoration: none;
     }
   }
 }

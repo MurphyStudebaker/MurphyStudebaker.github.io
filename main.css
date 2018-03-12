@@ -1,9 +1,6 @@
 /* Variable Declarations */
 /* Colors */
 @font-face {
-  font-family: 'Uni Sans';
-  src: url("C:/Users/Murphy/Documents/website/resources/Uni-Sans.otf") format("woff"); }
-@font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
 /* Positioning for the .work-container grid*/
@@ -54,7 +51,7 @@ body {
     .menu .nav a {
       text-decoration: none;
       color: #eeecda;
-      font-family: "Raleway";
+      font-family: "Raleway", sans-serif;
       padding-top: 1rem;
       transition: margin-left .8s; }
       .menu .nav a:hover {
@@ -101,13 +98,13 @@ body {
   .content .no-padding {
     padding-top: 0; }
   .content .tag {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: #666666;
     padding-left: 17%;
     padding-top: 5%; }
   .content #copyright {
     padding: 1rem 0 1rem 0;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-size: .8rem;
     color: #666666;
     text-align: center; }
@@ -131,14 +128,14 @@ body {
 /* Styling for Components */
 /* Styling for different site buttons */
 .menu .action {
-  padding: .4rem;
-  margin-top: .5rem;
-  margin-right: .5rem;
+  position: relative;
+  top: .4rem;
+  padding: .2rem 1rem .2rem 1rem;
   background-color: Transparent;
   color: #eeecda;
   border: thin solid #eeecda;
   width: 6rem;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   transition: border-radius .5s ease; }
   .menu .action:hover {
     background-color: #d1492d;
@@ -146,21 +143,20 @@ body {
     border-radius: .5rem; }
 
 .projects .more {
-  padding: .5rem 0 .5rem 0;
-  margin-top: 2rem;
+  padding: .5rem 3rem .5rem 3rem;
+  position: relative;
+  top: 2.5rem;
   background-color: #eeecda;
   color: #080e3b;
   border: thin solid #080e3b;
-  width: 8rem;
-  font-family: "Raleway";
-  transition: border-radius .5s ease; }
+  font-family: "Raleway", sans-serif;
+  transition: border-radius .5s ease;
+  color: #080e3b;
+  text-decoration: none; }
   .projects .more:hover {
     background-color: #eeecda;
     cursor: pointer;
     border-radius: .5rem; }
-  .projects .more a {
-    color: #080e3b;
-    text-decoration: none; }
 
 /* Styling for Project Boxes */
 .projects {
@@ -180,11 +176,11 @@ body {
       text-transform: uppercase;
       padding-top: .5rem;
       color: #080e3b;
-      font-family: "Raleway"; }
+      font-family: "Raleway", sans-serif; }
     .projects li .description {
       font-size: 1rem;
       padding-top: 1rem;
-      font-family: "Raleway";
+      font-family: "Raleway", sans-serif;
       color: #eeecda; }
 
 /*!
