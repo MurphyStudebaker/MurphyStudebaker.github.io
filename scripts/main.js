@@ -2,6 +2,7 @@ var hamburger = document.querySelector(".hamburger");
 var nav = document.querySelector(".nav");
 var menu = document.querySelector(".menu");
 var content = document.querySelector(".content");
+var h2 = document.querySelector("h2");
 var active = true;
 var small = false;
 
@@ -47,6 +48,7 @@ hamburger.addEventListener("click", function() {
 /* Checks browser width to adjust menu functionality */
 function setSize() {
   var width = window.innerWidth;
+  h2.innerHTML = width;
   if (width < 750) {
     small = true;
   } else {
