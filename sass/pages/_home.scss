@@ -42,6 +42,7 @@ body {
     padding-top: 3rem;
     list-style: none;
     a {
+      font-size: 1.5vw;
       text-decoration: none;
       color: $light;
       font-family: $text-font;
@@ -69,7 +70,7 @@ body {
   h1 {
     color: $light;
     font-family: $heading-font;
-    font-size: 2rem;
+    font-size: 2.5vw;
     font-weight: 'black';
   }
 
@@ -79,7 +80,7 @@ body {
 
     li {
       display: inline-block;
-      width: 1.3rem;
+      width: 1.7vw;
       padding-right: .5rem;
       fill: $light;
 
