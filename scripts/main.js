@@ -48,8 +48,8 @@ hamburger.addEventListener("click", function() {
 /* Checks browser width to adjust menu functionality */
 function setSize() {
   var width = window.innerWidth;
-  h2.innerHTML = width;
-  if (width < 750) {
+  //h2.innerHTML = width;
+  if (width < 985) {
     small = true;
   } else {
     small = false;
