@@ -6,8 +6,8 @@
 /* Positioning for the .work-container grid*/
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-  grid-auto-rows: 35vw;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  grid-auto-rows: 400px;
   grid-gap: 1vw; }
 
 /* Styling for Pages*/
@@ -91,7 +91,7 @@ body {
     font-family: "Playfair Display";
     color: #080e3b;
     font-size: 4vw;
-    padding-left: 17%;
+    padding-left: 10rem;
     padding-top: 10%;
     width: 70%; }
   .content .red {
@@ -99,11 +99,12 @@ body {
   .content .no-padding {
     padding-top: 0; }
   .content .tag {
+    display: inline-block;
     font-size: 1.5vw;
     font-family: "Raleway", sans-serif;
     color: #666666;
-    padding-left: 17%;
-    padding-top: 5%; }
+    margin-top: 2rem;
+    margin-left: 10rem; }
   .content #copyright {
     padding: 1rem 0 1rem 0;
     font-family: "Raleway", sans-serif;
@@ -113,19 +114,27 @@ body {
 
 .content {
   background-color: #eeecda; }
-  .content .about .headshot {
-    display: inline-block;
-    width: 50%;
-    filter: grayscale(100%);
-    margin: 0; }
-  .content .about .block {
-    display: inline-block;
-    background-color: #d1492d;
-    width: 40%; }
-    .content .about .block .tag {
-      font-family: "Playfair Display";
-      color: #080e3b;
-      border: 2px solid #d1492d; }
+  .content .about {
+    margin-left: 4rem;
+    margin-top: 6rem;
+    display: flex; }
+    .content .about .headshot {
+      align-self: center;
+      display: inline-block;
+      filter: grayscale(100%);
+      margin: 0; }
+      .content .about .headshot img {
+        width: 20rem; }
+    .content .about p {
+      display: inline-block;
+      padding: 0 2rem 0 2rem;
+      width: 50%;
+      font-family: "Raleway", sans-serif;
+      color: #666666;
+      font-size: 2vmax; }
+      .content .about p span {
+        color: #080e3b;
+        font-family: "Playfair Display"; }
 
 /* Styling for Components */
 /* Styling for different site buttons */
@@ -163,7 +172,7 @@ body {
 /* Styling for Project Boxes */
 .projects {
   margin-left: 4rem;
-  margin-top: 8rem;
+  margin-top: 6rem;
   list-style: none; }
   .projects li {
     background-color: #d1492d;

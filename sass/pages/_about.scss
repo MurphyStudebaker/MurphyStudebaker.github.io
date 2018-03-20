@@ -3,21 +3,31 @@
   background-color: $light;
 
   .about {
+    margin-left: 4rem;
+    margin-top: 6rem;
+    display: flex;
     .headshot {
+      img {
+        width: 20rem;
+      }
+      align-self: center;
       display: inline-block;
-      width: 50%;
       filter: grayscale(100%);
       margin: 0;
     }
-    .block {
+    p {
       display: inline-block;
-      background-color: $highlight;
-      width: 40%;
-      .tag {
-        font-family: $heading-font;
+      //align-content: center;
+      padding: 0 2rem 0 2rem;
+      width: 50%;
+      font-family: $text-font;
+      color: $med;
+      font-size: 2vmax;
+      span {
         color: $dark;
-        border: 2px solid $highlight;
+        font-family: $heading-font;
       }
     }
+
   }
 }
