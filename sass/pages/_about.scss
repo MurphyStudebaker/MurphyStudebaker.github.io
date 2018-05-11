@@ -1,33 +1,52 @@
 //about page
+.ab-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-columns: 350px;
+  grid-gap: 3vw;
+}
+
 .content {
   background-color: $light;
-
   .about {
-    margin-left: 4rem;
-    margin-top: 6rem;
-    display: flex;
+    margin-top: 15%;
+    h2 {
+      color: $dark;
+      font-family: $heading-font;
+      font-size: 7vmin;
+    }
     .headshot {
-      img {
-        width: 20rem;
-      }
-      align-self: center;
-      display: inline-block;
+      background-image: url("resources/murphy-studebaker-headshot.jpg");
+      background-position: 50% 30%;
       filter: grayscale(100%);
       margin: 0;
     }
     p {
-      display: inline-block;
-      //align-content: center;
-      padding: 0 2rem 0 2rem;
-      width: 50%;
       font-family: $text-font;
       color: $med;
-      font-size: 2vmax;
+      font-size: 2vmin;
       span {
         color: $dark;
         font-family: $heading-font;
       }
     }
-
+  }
+  .knowledge {
+    h3 {
+      font-family: $heading-font;
+      font-size: 3vmin;
+      color: $dark;
+    }
+    ul {
+      margin-left: 1.5rem;
+      li {
+        font-family: $text-font;
+        color: $med;
+        padding-top: .2rem;
+      }
+    }
+  }
+  .spacer {
+    height: 2rem;
   }
 }

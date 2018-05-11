@@ -4,16 +4,10 @@
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
 /* Positioning for the .work-container grid*/
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-  grid-auto-rows: 400px;
-  grid-gap: 1vw; }
-
 /* Styling for Pages*/
 /* Menu Styling */
 body {
-  background-color: #eeecda; }
+  background-color: #f0f0f0; }
 
 * {
   padding: 0;
@@ -29,112 +23,91 @@ body {
 
 .hamburger {
   color: #080e3b;
-  transition: color .5s ease; }
+  transition: color .5s ease;
+  visibility: hidden; }
 
-.menu {
-  background-color: #080e3b;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  padding-top: 75px;
-  padding-left: 5rem;
-  transition: left .5s ease; }
-  .menu a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #eeecda; }
-  .menu .nav {
-    padding-top: 3rem;
-    list-style: none; }
-    .menu .nav a {
-      font-size: 1.5vw;
-      text-decoration: none;
-      color: #eeecda;
-      font-family: "Raleway", sans-serif;
-      padding-top: 1rem;
-      transition: margin-left .8s; }
-      .menu .nav a:hover {
-        color: #d1492d;
-        cursor: pointer;
-        margin-left: .5rem; }
-      .menu .nav a:active {
-        color: #d1492d;
-        margin-left: .5rem; }
-    .menu .nav li {
-      padding-top: 1.5rem; }
-    .menu .nav #gap {
-      padding-top: 2rem; }
-  .menu h1 {
-    color: #eeecda;
-    font-family: "Playfair Display";
-    font-size: 2.5vw;
-    font-weight: 'black'; }
-  .menu .social {
-    list-style: none;
-    padding-top: 1rem; }
-    .menu .social li {
-      display: inline-block;
-      width: 1.7vw;
-      padding-right: .5rem;
-      fill: #eeecda; }
-      .menu .social li:hover {
-        fill: #d1492d;
-        cursor: pointer; }
+.nav {
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+  display: inline-block; }
+
+.togglable {
+  visibility: hidden;
+  margin-left: 5rem; }
 
 /* Content of the Home Page */
 .content {
-  position: relative;
-  transition: width .5s ease, left .5s ease; }
-  .content h2 {
+  padding: 8%; }
+  .content .head {
     font-family: "Playfair Display";
     color: #080e3b;
-    font-size: 4vw;
-    padding-left: 10rem;
-    padding-top: 10%;
-    width: 70%; }
+    width: 80%;
+    font-size: 8vmin; }
   .content .red {
-    color: #d1492d; }
+    color: #cc6060;
+    margin-bottom: 4rem; }
   .content .no-padding {
     padding-top: 0; }
-  .content .tag {
-    display: inline-block;
-    font-size: 1.5vw;
+  .content .hire-me {
+    visibility: collapse;
+    margin-top: 10rem;
     font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 3vmin;
+    border: 2px solid #666666;
+    border-radius: 1rem;
+    padding: .8rem 1.5rem .8rem 1.5rem;
     color: #666666;
-    margin-top: 2rem;
-    margin-left: 10rem; }
-  .content #copyright {
-    padding: 1rem 0 1rem 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 1vw;
-    color: #666666;
-    text-align: center; }
+    text-decoration: none;
+    width: 15rem;
+    transition: width .3s; }
+    .content .hire-me:hover {
+      width: 18rem; }
+
+.subheading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vmin;
+  color: #666666;
+  margin: 1rem 0 1rem 0; }
+
+.ab-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-columns: 350px;
+  grid-gap: 3vw; }
 
 .content {
-  background-color: #eeecda; }
+  background-color: #f0f0f0; }
   .content .about {
-    margin-left: 4rem;
-    margin-top: 6rem;
-    display: flex; }
+    margin-top: 15%; }
+    .content .about h2 {
+      color: #080e3b;
+      font-family: "Playfair Display";
+      font-size: 7vmin; }
     .content .about .headshot {
-      align-self: center;
-      display: inline-block;
+      background-image: url("resources/murphy-studebaker-headshot.jpg");
+      background-position: 50% 30%;
       filter: grayscale(100%);
       margin: 0; }
-      .content .about .headshot img {
-        width: 20rem; }
     .content .about p {
-      display: inline-block;
-      padding: 0 2rem 0 2rem;
-      width: 50%;
       font-family: "Raleway", sans-serif;
       color: #666666;
-      font-size: 2vmax; }
+      font-size: 2vmin; }
       .content .about p span {
         color: #080e3b;
         font-family: "Playfair Display"; }
+  .content .knowledge h3 {
+    font-family: "Playfair Display";
+    font-size: 3vmin;
+    color: #080e3b; }
+  .content .knowledge ul {
+    margin-left: 1.5rem; }
+    .content .knowledge ul li {
+      font-family: "Raleway", sans-serif;
+      color: #666666;
+      padding-top: .2rem; }
+  .content .spacer {
+    height: 2rem; }
 
 /* Styling for Components */
 /* Styling for different site buttons */
@@ -143,13 +116,13 @@ body {
   top: .4rem;
   padding: .2rem 1rem .2rem 1rem;
   background-color: Transparent;
-  color: #eeecda;
-  border: thin solid #eeecda;
+  color: #f0f0f0;
+  border: thin solid #f0f0f0;
   width: 3vw;
   font-family: "Raleway", sans-serif;
   transition: border-radius .5s ease; }
   .menu .action:hover {
-    background-color: #d1492d;
+    background-color: #cc6060;
     cursor: pointer;
     border-radius: .5rem; }
 
@@ -157,7 +130,7 @@ body {
   padding: .5rem 3rem .5rem 3rem;
   position: relative;
   top: 2.5rem;
-  background-color: #eeecda;
+  background-color: #f0f0f0;
   color: #080e3b;
   border: thin solid #080e3b;
   font-family: "Raleway", sans-serif;
@@ -165,35 +138,51 @@ body {
   color: #080e3b;
   text-decoration: none; }
   .projects .more:hover {
-    background-color: #eeecda;
+    background-color: #f0f0f0;
     cursor: pointer;
     border-radius: .5rem; }
 
 /* Styling for Project Boxes */
 .projects {
-  margin-left: 4rem;
-  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1vw; }
+
+#projects {
+  margin-top: 8rem; }
+  #projects p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5vmin; }
+
+.projects {
   list-style: none; }
   .projects li {
-    background-color: #d1492d;
-    padding: 3rem; }
+    background-color: #cc6060;
+    border-radius: 1rem;
+    padding: 3rem;
+    transition: box-shadow .3s, transform .3s; }
+    .projects li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #131039; }
+    .projects li a {
+      text-decoration: none; }
     .projects li h3 {
-      font-size: 2vw;
+      font-size: 2vmin;
       line-height: 2.2rem;
       font-family: "Playfair Display";
       color: #080e3b;
       font-size: 2.5rem; }
     .projects li .skills {
-      font-size: 1.2vw;
+      font-size: 1.2vmin;
       text-transform: uppercase;
       padding-top: .5rem;
       color: #080e3b;
       font-family: "Raleway", sans-serif; }
     .projects li .description {
-      font-size: 1.35vw;
+      font-size: 2vmin;
       padding-top: 1rem;
       font-family: "Raleway", sans-serif;
-      color: #eeecda; }
+      color: #f0f0f0; }
 
 /*!
  * Hamburgers
@@ -265,21 +254,59 @@ body {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .hamburger--spin.is-active .hamburger-inner {
-  background-color: #eeecda;
+  background-color: #f0f0f0;
   transform: rotate(225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .hamburger--spin.is-active .hamburger-inner::before {
-  background-color: #eeecda;
+  background-color: #f0f0f0;
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
 
 .hamburger--spin.is-active .hamburger-inner::after {
-  background-color: #eeecda;
+  background-color: #f0f0f0;
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.footer {
+  margin-top: 10%;
+  width: 100vw;
+  height: 8rem;
+  background-color: #080e3b;
+  padding: 5rem 10rem 2rem 10rem; }
+  .footer h3 {
+    color: #f0f0f0;
+    font-size: 3.5vmin; }
+  .footer .links {
+    list-style: none;
+    margin-top: .2rem; }
+    .footer .links a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-family: "Raleway", sans-serif;
+      font-size: 2.5vmin;
+      padding-right: .5rem; }
+      .footer .links a:hover {
+        color: #cc6060; }
+    .footer .links .resume {
+      padding-left: .5rem; }
+    .footer .links .email {
+      border-right: thin solid #f0f0f0; }
+    .footer .links li {
+      display: inline-block; }
+  .footer .social {
+    list-style: none;
+    margin-top: .4rem; }
+    .footer .social li {
+      display: inline-block;
+      width: 3vmin;
+      padding-right: .5rem;
+      fill: #f0f0f0; }
+      .footer .social li:hover {
+        fill: #cc6060;
+        cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

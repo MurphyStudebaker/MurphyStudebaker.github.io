@@ -1,28 +1,48 @@
 /* Styling for Project Boxes */
 .projects {
-  margin-left: 4rem;
-  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1vw;
+}
+
+#projects {
+  margin-top: 8rem;
+  p {
+    font-family: $text-font;
+    font-size: 1.5vmin;
+  }
+}
+.projects {
   list-style: none;
   li {
-    //clip-path: polygon(0 100%,50% 100%,100% 100%,100% 100%);
     background-color: $highlight;
+    border-radius: 1rem;
     padding: 3rem;
+    transition: box-shadow .3s,
+                transform .3s;
+     &:hover {
+       transform: scale(1.02);
+       box-shadow: 0 0 15px rgba(19, 16, 57, 80);
+     }
+    a {
+      text-decoration: none;
+    }
     h3 {
-      font-size: 2vw;
+      font-size: 2vmin;
       line-height: 2.2rem;
       font-family: $heading-font;
       color: $dark;
       font-size: 2.5rem;
     }
     .skills {
-      font-size: 1.2vw;
+      font-size: 1.2vmin;
       text-transform: uppercase;
       padding-top: .5rem;
       color: $dark;
       font-family: $text-font;
     }
     .description {
-      font-size: 1.35vw;
+      font-size: 2vmin;
       padding-top: 1rem;
       font-family: $text-font;
       color: $light;

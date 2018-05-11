@@ -19,75 +19,17 @@ body {
 .hamburger {
   color: $dark;
   transition: color .5s ease;
+  visibility: hidden;
 }
 
-.menu {
-  background-color: $dark;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  padding-top: 75px;
-  padding-left: 5rem;
-  transition: left .5s ease;
+.nav {
+  font-family: $text-font;
+  list-style: none;
+  display: inline-block;
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    color: $light;
-  }
+}
 
-  .nav {
-    padding-top: 3rem;
-    list-style: none;
-    a {
-      font-size: 1.5vw;
-      text-decoration: none;
-      color: $light;
-      font-family: $text-font;
-      padding-top: 1rem;
-      transition: margin-left .8s;
-      &:hover {
-        color: $highlight;
-        cursor: pointer;
-        margin-left: .5rem;
-      }
-      &:active{
-        color: $highlight;
-        margin-left: .5rem;
-      }
-    }
-    li {
-      padding-top: 1.5rem;
-    }
-
-    #gap {
-      padding-top: 2rem;
-    }
-  }
-
-  h1 {
-    color: $light;
-    font-family: $heading-font;
-    font-size: 2.5vw;
-    font-weight: 'black';
-  }
-
-  .social {
-    list-style: none;
-    padding-top: 1rem;
-
-    li {
-      display: inline-block;
-      width: 1.7vw;
-      padding-right: .5rem;
-      fill: $light;
-
-      &:hover {
-        fill: $highlight;
-        cursor: pointer;
-      }
-    }
-  }
+.togglable {
+  visibility: hidden; //toggled by hamburger
+  margin-left: 5rem;
 }

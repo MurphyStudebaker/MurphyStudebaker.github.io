@@ -1,7 +1,1 @@
 /* Positioning for the .work-container grid*/
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-  grid-auto-rows: 400px;
-  grid-gap: 1vw;
-}
