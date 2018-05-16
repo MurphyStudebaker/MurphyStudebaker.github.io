@@ -3,39 +3,12 @@
 @font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
-/* Positioning for the .work-container grid*/
 /* Styling for Pages*/
-/* Menu Styling */
-body {
-  background-color: #f0f0f0; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-.toggle {
-  position: fixed;
-  padding-left: 10px;
-  padding-top: 10px;
-  z-index: 2; }
-  .toggle button:focus {
-    outline: 0; }
-
-.hamburger {
-  color: #080e3b;
-  transition: color .5s ease;
-  visibility: hidden; }
-
-.nav {
-  font-family: "Raleway", sans-serif;
-  list-style: none;
-  display: inline-block; }
-
-.togglable {
-  visibility: hidden;
-  margin-left: 5rem; }
-
 /* Content of the Home Page */
+* {
+  margin: 0;
+  padding: 0; }
+
 .content {
   padding: 8%; }
   .content .head {
@@ -109,6 +82,37 @@ body {
   .content .spacer {
     height: 2rem; }
 
+/* Menu Styling */
+body {
+  background-color: #f0f0f0;
+  /*  width: 100vw;*/ }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.toggle {
+  position: fixed;
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 2; }
+  .toggle button:focus {
+    outline: 0; }
+
+.hamburger {
+  color: #080e3b;
+  transition: color .5s ease;
+  visibility: hidden; }
+
+.nav {
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+  display: inline-block; }
+
+.togglable {
+  visibility: hidden;
+  margin-left: 5rem; }
+
 /* Styling for Components */
 /* Styling for different site buttons */
 .menu .action {
@@ -118,7 +122,7 @@ body {
   background-color: Transparent;
   color: #f0f0f0;
   border: thin solid #f0f0f0;
-  width: 3vw;
+  /*width: 3vw;*/
   font-family: "Raleway", sans-serif;
   transition: border-radius .5s ease; }
   .menu .action:hover {
@@ -273,7 +277,6 @@ body {
 
 .footer {
   margin-top: 10%;
-  width: 100vw;
   height: 8rem;
   background-color: #080e3b;
   padding: 5rem 10rem 2rem 10rem; }

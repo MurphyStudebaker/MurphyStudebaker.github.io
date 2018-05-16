@@ -1,12 +1,11 @@
 /* Variable Declarations */
 @import "./helpers/color";
 @import './helpers/variables';
-@import './helpers/work-container.scss';
 
 /* Styling for Pages*/
-@import "./pages/home";
 @import "./pages/content";
 @import './pages/about';
+@import './pages/home';
 
 /* Styling for Components */
 @import "./components/button";
