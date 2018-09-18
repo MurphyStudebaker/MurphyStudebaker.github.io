@@ -1,46 +1,21 @@
-.footer {
-  margin-top: 10%;
-  height:8rem;
-  background-color: $dark;
-  padding: 5rem 10rem 2rem 10rem;
-  h3 {
-    color: $light;
-    font-size: 3.5vmin;
+/* Footer added styling */
+footer {
+  li {
+    display: inline-block;
+    padding-left: .8rem;
+    padding-bottom: .5rem;
   }
-  .links {
-    list-style: none;
-    margin-top: .2rem;
-    a {
-      text-decoration: none;
-      color: $light;
-      font-family: $text-font;
-      font-size: 2.5vmin;
-      padding-right: .5rem;
-      &:hover {
-        color: $highlight;
-      }
-    }
-    .resume {
-      padding-left: .5rem;
-    }
-    .email {
-      border-right: thin solid $light;
-    }
-    li {
-      display: inline-block;
-     }
+  .first {
+    padding-left: 0;
+  }
+  .spacer {
+    height: 1.5rem;
   }
   .social {
-    list-style: none;
-    margin-top: .4rem;
-    li {
-      display: inline-block;
-      width: 3vmin;
-      padding-right: .5rem;
-      fill: $light;
+    a {
+      transition: transform .3s;
       &:hover {
-        fill: $highlight;
-        cursor: pointer;
+        transform: scale(2);
       }
     }
   }

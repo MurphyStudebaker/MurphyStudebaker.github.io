@@ -1,36 +1,93 @@
-/* Menu Styling */
-body {
-  background-color: $light;
-/*  width: 100vw;*/
+
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+
+.title {
+  font-family: "Playfair Display";
+}
+.about {
+  img {
+    display: block;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro-text {
+    font-size: 7vh;
+    padding-top: 4rem;
+    color: $dark;
+    span {
+      color: $highlight;
+    }
+  }
+  p {
+    padding-top: 2rem;
+    font-size: 2vh;
+  }
 }
 
-.toggle {
-  position: fixed;
-  padding-left: 10px;
-  padding-top: 10px;
-  z-index: 2; //at front
-  button:focus {outline:0;}
+.industries {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  .heading {
+    padding-top: 1rem;
+  }
+  .img {
+    width: 6rem;
+  }
 }
 
-.hamburger {
-  color: $dark;
-  transition: color .5s ease;
-  visibility: hidden;
+.skills {
+  background-color: $dark;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .heading {
+    color: $highlight;
+  }
+  li {
+    color: $light;
+  }
+  .lang {
+    ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
 }
 
-.nav {
-  font-family: $text-font;
-  list-style: none;
-  display: inline-block;
-
-}
-
-.togglable {
-  visibility: hidden; //toggled by hamburger
-  margin-left: 5rem;
+.projects {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  .project {
+    .level-left {
+      width: 20rem;
+    }
+    a {
+      color: $dark;
+    }
+    padding-bottom: 2rem;
+    .skills-used {
+      li {
+        display: inline-block;
+        padding-left: 1rem;
+        color: $highlight;
+      }
+      #first {
+        padding-left: 0;
+      }
+    }
+    .description {
+      width: 55vw;
+      max-width: 800px;
+      padding-left: 10vw;
+      font-size: 1.5vh;
+    }
+  }
+  .complete {
+    padding-top: 5rem;
+  }
 }

@@ -1,315 +1,86 @@
-/* Variable Declarations */
+/* Styling for Project Entries */
 /* Colors */
 @font-face {
   font-family: 'Raleway';
   src: url("https://fonts.google.com/specimen/Raleway"); }
-/* Styling for Pages*/
-/* Content of the Home Page */
-* {
-  margin: 0;
-  padding: 0; }
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
-.content {
-  padding: 8%; }
-  .content .head {
-    font-family: "Playfair Display";
-    color: #080e3b;
-    width: 80%;
-    font-size: 8vmin; }
-  .content .red {
-    color: #cc6060;
-    margin-bottom: 4rem; }
-  .content .no-padding {
-    padding-top: 0; }
-  .content .hire-me {
-    visibility: collapse;
-    margin-top: 10rem;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 3vmin;
-    border: 2px solid #666666;
-    border-radius: 1rem;
-    padding: .8rem 1.5rem .8rem 1.5rem;
-    color: #666666;
-    text-decoration: none;
-    width: 15rem;
-    transition: width .3s; }
-    .content .hire-me:hover {
-      width: 18rem; }
+.title {
+  font-family: "Playfair Display"; }
 
-.subheading {
-  font-family: "Raleway", sans-serif;
-  font-size: 3vmin;
-  color: #666666;
-  margin: 1rem 0 1rem 0; }
-
-.ab-cont {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-auto-columns: 350px;
-  grid-gap: 3vw; }
-
-.content {
-  background-color: #f0f0f0; }
-  .content .about {
-    margin-top: 15%; }
-    .content .about h2 {
-      color: #080e3b;
-      font-family: "Playfair Display";
-      font-size: 7vmin; }
-    .content .about .headshot {
-      background-image: url("resources/murphy-studebaker-headshot.jpg");
-      background-position: 50% 30%;
-      filter: grayscale(100%);
-      margin: 0; }
-    .content .about p {
-      font-family: "Raleway", sans-serif;
-      color: #666666;
-      font-size: 2vmin; }
-      .content .about p span {
-        color: #080e3b;
-        font-family: "Playfair Display"; }
-  .content .knowledge h3 {
-    font-family: "Playfair Display";
-    font-size: 3vmin;
-    color: #080e3b; }
-  .content .knowledge ul {
-    margin-left: 1.5rem; }
-    .content .knowledge ul li {
-      font-family: "Raleway", sans-serif;
-      color: #666666;
-      padding-top: .2rem; }
-  .content .spacer {
-    height: 2rem; }
-
-/* Menu Styling */
-body {
-  background-color: #f0f0f0;
-  /*  width: 100vw;*/ }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-.toggle {
-  position: fixed;
-  padding-left: 10px;
-  padding-top: 10px;
-  z-index: 2; }
-  .toggle button:focus {
-    outline: 0; }
-
-.hamburger {
-  color: #080e3b;
-  transition: color .5s ease;
-  visibility: hidden; }
-
-.nav {
-  font-family: "Raleway", sans-serif;
-  list-style: none;
-  display: inline-block; }
-
-.togglable {
-  visibility: hidden;
-  margin-left: 5rem; }
-
-/* Styling for Components */
-/* Styling for different site buttons */
-.menu .action {
-  position: relative;
-  top: .4rem;
-  padding: .2rem 1rem .2rem 1rem;
-  background-color: Transparent;
-  color: #f0f0f0;
-  border: thin solid #f0f0f0;
-  /*width: 3vw;*/
-  font-family: "Raleway", sans-serif;
-  transition: border-radius .5s ease; }
-  .menu .action:hover {
-    background-color: #cc6060;
-    cursor: pointer;
-    border-radius: .5rem; }
-
-.projects .more {
-  padding: .5rem 3rem .5rem 3rem;
-  position: relative;
-  top: 2.5rem;
-  background-color: #f0f0f0;
-  color: #080e3b;
-  border: thin solid #080e3b;
-  font-family: "Raleway", sans-serif;
-  transition: border-radius .5s ease;
-  color: #080e3b;
-  text-decoration: none; }
-  .projects .more:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-    border-radius: .5rem; }
-
-/* Styling for Project Boxes */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 1vw; }
-
-#projects {
-  margin-top: 8rem; }
-  #projects p {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5vmin; }
-
-.projects {
-  list-style: none; }
-  .projects li {
-    background-color: #cc6060;
-    border-radius: 1rem;
-    padding: 3rem;
-    transition: box-shadow .3s, transform .3s; }
-    .projects li:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 15px #131039; }
-    .projects li a {
-      text-decoration: none; }
-    .projects li h3 {
-      font-size: 2vmin;
-      line-height: 2.2rem;
-      font-family: "Playfair Display";
-      color: #080e3b;
-      font-size: 2.5rem; }
-    .projects li .skills {
-      font-size: 1.2vmin;
-      text-transform: uppercase;
-      padding-top: .5rem;
-      color: #080e3b;
-      font-family: "Raleway", sans-serif; }
-    .projects li .description {
-      font-size: 2vmin;
-      padding-top: 1rem;
-      font-family: "Raleway", sans-serif;
-      color: #f0f0f0; }
-
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible; }
-
-.hamburger:hover {
-  opacity: 0.7; }
-
-.hamburger-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative; }
-
-.hamburger-inner {
+.about img {
   display: block;
-  top: 50%;
-  margin-top: -2px; }
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto; }
+.about .intro-text {
+  font-size: 7vh;
+  padding-top: 4rem;
+  color: #080e3b; }
+  .about .intro-text span {
+    color: #cc6060; }
+.about p {
+  padding-top: 2rem;
+  font-size: 2vh; }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+.industries {
+  margin-top: 3rem;
+  margin-bottom: 6rem; }
+  .industries .heading {
+    padding-top: 1rem; }
+  .industries .img {
+    width: 6rem; }
+
+.skills {
   background-color: #080e3b;
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+  .skills .heading {
+    color: #cc6060; }
+  .skills li {
+    color: #f0f0f0; }
+  .skills .lang ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; }
 
-.hamburger-inner::before, .hamburger-inner::after {
-  content: "";
-  display: block; }
-
-.hamburger-inner::before {
-  top: -10px; }
-
-.hamburger-inner::after {
-  bottom: -10px; }
-
-/*
-   * Spin
-   */
-.hamburger--spin .hamburger-inner {
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-
-.hamburger--spin .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
-
-.hamburger--spin .hamburger-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-
-.hamburger--spin.is-active .hamburger-inner {
-  background-color: #f0f0f0;
-  transform: rotate(225deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-
-.hamburger--spin.is-active .hamburger-inner::before {
-  background-color: #f0f0f0;
-  top: 0;
-  opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
-
-.hamburger--spin.is-active .hamburger-inner::after {
-  background-color: #f0f0f0;
-  bottom: 0;
-  transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
-
-.footer {
-  margin-top: 10%;
-  height: 8rem;
-  background-color: #080e3b;
-  padding: 5rem 10rem 2rem 10rem; }
-  .footer h3 {
-    color: #f0f0f0;
-    font-size: 3.5vmin; }
-  .footer .links {
-    list-style: none;
-    margin-top: .2rem; }
-    .footer .links a {
-      text-decoration: none;
-      color: #f0f0f0;
-      font-family: "Raleway", sans-serif;
-      font-size: 2.5vmin;
-      padding-right: .5rem; }
-      .footer .links a:hover {
-        color: #cc6060; }
-    .footer .links .resume {
-      padding-left: .5rem; }
-    .footer .links .email {
-      border-right: thin solid #f0f0f0; }
-    .footer .links li {
-      display: inline-block; }
-  .footer .social {
-    list-style: none;
-    margin-top: .4rem; }
-    .footer .social li {
+.projects {
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
+  .projects .project {
+    padding-bottom: 2rem; }
+    .projects .project .level-left {
+      width: 20rem; }
+    .projects .project a {
+      color: #080e3b; }
+    .projects .project .skills-used li {
       display: inline-block;
-      width: 3vmin;
-      padding-right: .5rem;
-      fill: #f0f0f0; }
-      .footer .social li:hover {
-        fill: #cc6060;
-        cursor: pointer; }
+      padding-left: 1rem;
+      color: #cc6060; }
+    .projects .project .skills-used #first {
+      padding-left: 0; }
+    .projects .project .description {
+      width: 55vw;
+      max-width: 800px;
+      padding-left: 10vw;
+      font-size: 1.5vh; }
+  .projects .complete {
+    padding-top: 5rem; }
+
+/* Footer added styling */
+footer li {
+  display: inline-block;
+  padding-left: .8rem;
+  padding-bottom: .5rem; }
+footer .first {
+  padding-left: 0; }
+footer .spacer {
+  height: 1.5rem; }
+footer .social a {
+  transition: transform .3s; }
+  footer .social a:hover {
+    transform: scale(2); }
 
 /*# sourceMappingURL=main.css.map */
