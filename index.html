@@ -5,21 +5,22 @@
     <link type="text/css" rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
     <link type="image/x-icon" rel="shortcut icon" href="resources/favicon.png">
-    <title> Murphy Studebaker | Developer </title>
+    <title> Murphy Studebaker | Maker </title>
     <meta name="google-site-verification" content="1Nw48YnfbVNOR8wHQmG3AC5Ae66YaJ-zUCywAh97LTA" />
   </head>
 
   <body>
+
     <!-- Start of actual web content -->
     <section class="section about">
       <div class="container">
-        <h1 class="title is-1 intro-text"> <span> I'm Murphy, </span> </br> a data analyst, software engineer, poet, builder, and learner. </h1>
+        <h1 class="title is-1 intro-text"> <span class="red"> I'm Murphy, </span> </br> a data analyst, software engineer, poet, maker, and learner. </h1>
         <p>
-          In my lifetime I have played the drums in an award winning jazz band,
+          I have played the drums in a jazz band,
           screened a film at South by Southwest, spent a semester studying and
           backpacking through Europe, built a home in the back of my car and driven
-          across the United States, read countless novels and poems, and received
-          a degree in Data Analytics. I have a curious mind, a do-it-yourself attitude,
+          across the United States, and received a Bachelor of Science in Data Analytics.
+          I have a curious mind, a do-it-yourself attitude,
           and a creative approach to solving problems. If you are a company full
           of kind people, I would really like to work with you. Here are the industries
           I am most passionate about:
@@ -27,7 +28,7 @@
       </div>
     </section>
 
-    <!-- List of industries + corresponding icons that I wan to work for -->
+    <!-- List of industries + corresponding icons that I want to work for -->
     <section class="section industries">
       <div class="container">
         <div class="level">
@@ -65,7 +66,7 @@
         <div class="level">
           <div class="level-item">
             <ul class="lang">
-              <li class="heading"> Programming Languages </li>
+              <li class="heading"> Computer Languages </li>
               <li> Java </li>
               <li> Python </li>
               <li> C++ </li>
@@ -105,14 +106,48 @@
         </div>
       </div>
     </section>
-
+<!--
+    <div class="container dropdown-filter">
+      <h1 class="lead-in title"> Show me </h1>
+      <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <button class="button drop" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <span class="title red"> what you're most proud of. </span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item title red">
+              mobile applications.
+            </a>
+            <a class="dropdown-item title red">
+              websites.
+            </a>
+            <a class="dropdown-item title red">
+              data analysis.
+            </a>
+            <a class="dropdown-item title red">
+              creative endeavors.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
     <!-- List of recent projects and work I have done -->
-    <section class="section projects">
-      <div class="container current">
-        <h4 class="heading"> current projects </h4>
-        <ul>
-          <li class="project level">
-            <div class="level-item level-left">
+    <section class="section">
+      <div class="container">
+        <h2 class="title is-2 red"> Portfolio </h2>
+          <p class="disclaimer">
+            The following projects link to write-ups on my design processes, architecture choices,
+            challenges, and what I found interesting through creating these projects.
+            If you'd like to strictly look at code, visit my <a href="https://github.com/MurphyStudebaker"> GitHub account. </a>
+          </p>
+        <div class="projects">
+          <a class="project" href="https://medium.com/@murphystude/promoting-coffee-culture-with-a-mobile-app-31162ba11989">
               <div>
                 <h4 class="title is-4"> Cascara </h4>
                 <ul class="skills-used">
@@ -121,233 +156,93 @@
                   <li class="heading"> REST API </li>
                 </ul>
               </div>
-            </div>
-            <div class="level-item level-right">
               <p class="description">
-                Cascara is a mobile application that uses crowd-sourced data
-                and machine learning to help users find the perfect coffee house
-                in their area. I designed and populated a sizeable MySQL database
-                with information on coffee houses across the US and constructed a
-                REST API to communicate data to the native Android application. 
+                A mobile application that uses crowd-sourced data
+                to help users find the perfect coffee house in their area.
+                I populated a seven table MySQL database, built a RESTful API,
+                and designed and built an Android application using the Volley library.
               </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
+          </a>
+          <a class="project">
               <div>
-                <h4 class="title is-4"> Postcard Poetry </h4>
-                <ul class="skills-used">
-                  <li class="heading" id="first"> Web </li>
-                  <li class="heading"> Firebase </li>
-                  <li class="heading"> SVG </li>
-                </ul>
-              </div>
-            </div>
-            <div class="level-item level-right">
-              <p class="description">
-                Postcard poetry is an interactive map of travel poetry from my
-                semester aproad in London, United Kingdom. I am using an
-                SVG map in JavaScript and interfacing data with Google Firebase.
-              </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
-              <div>
-                <h4 class="title is-4"> Active Animal </h4>
+                <h4 class="title is-4"> Petestrian </h4>
                 <ul class="skills-used">
                   <li class="heading" id="first"> Mobile </li>
                   <li class="heading"> UX Design </li>
                 </ul>
               </div>
-            </div>
-            <div class="level-item level-right">
               <p class="description">
-                Conducting user research and testing to design a mobile application that
-                encourages users to have a more active lifestyle by walking
-                their digital pet.
+                A mobile application that encourages users to lead more active lifestyles
+                by emotionally pairing their step count to the health of a digital pet.
+                I researched current academic literature on health-related mobile applications,
+                conducted user testing, and built both low-fidelity and high-fidelity prototypes.
               </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="container complete">
-        <h4 class="heading"> Completed Projects </h4>
-        <ul>
-          <li class="project level">
-            <div class="level-item level-left">
+          </a>
+          <a class="project">
               <div>
-                <h4 class="title is-4"><a href="https://medium.com/@murphystude/creating-a-restaurant-review-app-for-hogsmeade-78744bffa3f2">
-                  Hogsmeade Review App </a></h4>
+                <h4 class="title is-4"> How to Talk About Wine </h4>
                 <ul class="skills-used">
-                  <li class="heading" id="first"> Android </li>
-                  <li class="heading"> Mobile </li>
-                  <li class="heading"> Java </li>
+                  <li class="heading" id="first"> Data Analysis </li>
+                  <li class="heading"> R </li>
                 </ul>
               </div>
-            </div>
-            <div class="level-item level-right">
               <p class="description">
-                Developed an android mobile application that stores restaurant reviews for Hogsmeade.
-                Loads data in from an XML in an Asynchronous Task to inflate the main RecyclerView,
-                and allows restaurants to be edited and added.
+                An analysis of 280,000+ wine tasting notes from WineEnthusiast.com
+                (Pretentious, I know). I conducted the analysis in R and wrote a
+                data journalism piece about my findings.
               </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
+          </a>
+          <a class="project" href="https://github.com/MurphyStudebaker/news-haikus">
               <div>
-                <h4 class="title is-4"><a href="https://github.com/MurphyStudebaker/news-haikus">
-                  Haiku the News </a></h4>
+                <h4 class="title is-4"> Haiku the News </h4>
                 <ul class="skills-used">
-                  <li class="heading" id="first"> Python </li>
-                  <li class="heading"> REST API </li>
-                  <li class="heading"> Language Processing </li>
+                  <li class="heading" id="first"> Language Processing </li>
+                  <li class="heading"> Python </li>
+                  <li class="heading"> API </li>
                 </ul>
               </div>
-            </div>
-            <div class="level-item level-right">
               <p class="description">
-                Generated daily haiku from current event headlines using the Google News API
-                and Python natural language processing toolkit. Presented my process
-                and findings during Chapman University Student Research Day.
+                A python application that generates haiku poetry from daily news headlines
+                or keyword-related articles. I used the Natural Language Toolkit
+                and the Google News API and presented my research at Student Research Day.
               </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
+          </a>
+          <a class="project" href="https://medium.com/@murphystude/how-i-built-a-home-in-the-backseat-of-my-honda-fit-83070a256a6d">
               <div>
-                <h4 class="title is-4"><a href="http://convergentts.com/">
-                   Convergent Technical Sales </a></h4>
-                <ul class="skills-used">
-                  <li class="heading" id="first"> Web </li>
-                  <li class="heading"> Freelance </li>
-                </ul>
-              </div>
-            </div>
-            <div class="level-item level-right">
-              <p class="description">
-                Designed and developed a responsive website for Convergent Technical
-                Sales based on the old content and client's new design specifications.
-              </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
-              <div>
-                <h4 class="title is-4"><a href="https://github.com/MurphyStudebaker/GameOfLife">
-                  Game of Life </a></h4>
-                <ul class="skills-used">
-                  <li class="heading" id="first"> Data Structures </li>
-                  <li class="heading"> C++ </li>
-                </ul>
-              </div>
-            </div>
-            <div class="level-item level-right">
-              <p class="description">
-                It's hazing, but for Computer Science students.
-                I developed a solution to this infamous programming assignment, complete width
-                classic, donut, and mirror modes.
-              </p>
-            </div>
-          </li>
-
-          <li class="project level">
-            <div class="level-item level-left">
-              <div>
-                <h4 class="title is-4"><a href="https://medium.com/@murphystude/how-i-built-a-home-in-the-backseat-of-my-honda-fit-83070a256a6d">
-                  Turning my Honda Fit into a Mobile Home </a></h4>
+                <h4 class="title is-4"> Designing a Camper for my Honda Fit </h4>
                 <ul class="skills-used">
                   <li class="heading" id="first"> Design </li>
+                  <li class="heading"> Just for Fun </li>
                 </ul>
               </div>
-            </div>
-            <div class="level-item level-right">
               <p class="description">
-                To satisfy my inner-engineer and hone in on power tool abilities,
-                I designed and built a home in the back of my hatchback to travel
-                with across the country.
+                I spent one summer road tripping around the United States by learning
+                how to use power tools and building a home in my hatchback.
               </p>
-            </div>
-          </li>
-        </ul>
+          </a>
+          <a class="project" href="http://www.convergentts.com">
+              <div>
+                <h4 class="title is-4"> Freelance Web Development </h4>
+                <ul class="skills-used">
+                  <li class="heading" id="first"> Design </li>
+                  <li class="heading"> Web </li>
+                </ul>
+              </div>
+              <p class="description">
+                I designed and built a website for my dad's fiberoptics sales
+                representation company Convergent Technical Sales.
+              </p>
+          </a>
+        </div>
 
-        <!-- Section with professional experience
-        <div class="container current">
-          <h4 class="heading"> professional experience </h4>
-          <ul>
-            <li class="project level">
-              <div class="level-item level-left">
-                <div>
-                  <h4 class="title is-4"> Convergent Technical Sales </h4>
-                  <ul class="skills-used">
-                    <li class="heading" id="first"> Web </li>
-                    <li class="heading"> Security </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="level-item level-right">
-                <p class="description">
-                  Designed and built a new responsive website for Convergent Technical Sales,
-                  a fiberoptics distributing company from Dallas, Texas. Used Nikto
-                  vulnerability scanner to ensure security best practices for the site.
-                </p>
-              </div>
-            </li>
-
-            <li class="project level">
-              <div class="level-item level-left">
-                <div>
-                  <h4 class="title is-4"> Prowl Magazine </h4>
-                  <ul class="skills-used">
-                    <li class="heading" id="first"> Web </li>
-                    <li class="heading"> WordPress</li>
-                    <li class="heading"> Communication </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="level-item level-right">
-                <p class="description">
-                  Managed two self-hosted wordpress sites for Prowl Magazine and their zine,
-                  Chapbook. Implemented a child theme to customize specific style
-                  and layout specified by the editorial staff. Answered technical
-                  questions from faculty advisors and student editors.
-                </p>
-              </div>
-            </li>
-
-            <li class="project level">
-              <div class="level-item level-left">
-                <div>
-                  <h4 class="title is-4"> Office of the Dean of Students </h4>
-                  <ul class="skills-used">
-                    <li class="heading" id="first"> Communication </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="level-item level-right">
-                <p class="description">
-                  Drafted multi-department submissions into a weekly announcement Email
-                  sent to the entire student body. Covered administrative desks when
-                  executive assistants are not present.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div> -->
+      </div>
     </section>
 
 
     <!-- Footer with contact information and site navigation -->
     <footer class="footer">
       <div class="container">
-        <p> Made by me using <a href="https://sass-lang.com/"> Sass </a> as a preprocessor and <a href="https://bulma.io/"> Bulma </a> as a framework.</p>
+        <p> Made by me using <a href="https://sass-lang.com/"> Sass </a> as a CSS preprocessor and <a href="https://bulma.io/"> Bulma </a> as a framework.</p>
         <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         <div class="spacer"></div>
         <ul class="links">
