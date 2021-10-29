@@ -202,14 +202,14 @@ header {
   gap: calc(2 * var(--spacing));
 }
 
-header > svg {
+header svg {
   color: var(--white);
   width: 24px;
   stroke-width: 1.5;
   transition: color 400ms;
 }
 
-header > svg:hover {
+header svg:hover {
   color: var(--secondary);
   transition: color 150ms;
 }
@@ -231,6 +231,7 @@ footer {
   padding: calc(var(--spacing) * 2);
   grid-column: 2;
   font-size: 1rem;
+  line-height: 1.4;
 }
 
 .heading {
