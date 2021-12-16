@@ -154,9 +154,11 @@ html {
   --blue-6: #cadaee;
   --red-1: #cc6060;
   --red-2: #5f0f12;
-  --white: #f0f0f0;
-  --primary: #080e3b;
-  --secondary: #cc6060;
+  --white: #fffffe;
+  --background: #004643;
+  --secondary: #f9bc60;
+  --primary: #abd1c6;
+  --tertiary: #e16162;
   --spacing: 8px;
   --mobileBreakpoint: 550px;
 }
@@ -164,7 +166,7 @@ html {
 body,
 a,
 p {
-  background-color: var(--white);
+  background-color: var(--background);
   color: var(--primary);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -201,6 +203,22 @@ h6 {
 
 .no-underline {
   text-decoration: none;
+}
+
+a:hover,
+a:hover svg {
+  color: var(--tertiary);
+  transition: color 200ms;
+}
+
+a:hover svg {
+  transform: rotate(20deg);
+  transition: all 200ms;
+}
+
+a,
+a svg {
+  transition: all 300ms;
 }
 
 .grid {
@@ -260,6 +278,7 @@ footer a {
 
 .heading {
   font-size: 5rem;
+  color: var(--white);
 }
 
 .job-description {
