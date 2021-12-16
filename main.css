@@ -142,7 +142,7 @@ table {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 html {
@@ -161,7 +161,9 @@ html {
   --mobileBreakpoint: 550px;
 }
 
-body {
+body,
+a,
+p {
   background-color: var(--white);
   color: var(--primary);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -179,12 +181,26 @@ h6 {
   color: var(--primary);
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .highlight {
   color: var(--secondary);
 }
 
 .spacer {
   height: calc(var(--spacing) * 4);
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .grid {
@@ -203,18 +219,19 @@ main {
 }
 
 header {
-  grid-column: 1 / -1;
-  background-color: var(--primary);
+  grid-column: 2;
+  color: var(--primary);
   display: flex;
   justify-content: flex-end;
-  padding: var(--spacing) calc(var(--spacing) * 2);
+  padding-bottom: calc(var(--spacing) * 2);
   gap: calc(2 * var(--spacing));
+  border-bottom: calc(var(--spacing) / 2) solid var(--primary);
 }
 
 header svg {
-  color: var(--white);
+  color: var(--primary);
   width: 24px;
-  stroke-width: 1.5;
+  stroke-width: 2;
 }
 
 .projects {
@@ -233,8 +250,12 @@ header svg {
 footer {
   padding: calc(var(--spacing) * 2);
   grid-column: 2;
-  font-size: 1rem;
   line-height: 1.4;
+}
+
+footer p,
+footer a {
+  font-size: 0.8rem;
 }
 
 .heading {
@@ -242,23 +263,24 @@ footer {
 }
 
 .job-description {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 .multi-faceted {
   line-height: 1.4;
 }
 
 @media (max-width: 550px) {
-  /* Mobile Styles */
+  /* MOBILE STYLE ADJUSTMENTS */
   .heading {
-    font-size: 10rem;
+    font-size: 3rem;
+  }
+  header {
+    padding-right: calc(var(--spacing) * 4);
   }
 }
 
 /* WARMING STRIPES */
-html {
-}
-
 .warming-stripes {
   background: linear-gradient(
     to right,
