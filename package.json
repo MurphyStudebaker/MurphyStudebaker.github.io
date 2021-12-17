@@ -1,0 +1,24 @@
+{
+  "name": "murphy",
+  "version": "1.0.0",
+  "description": "My personal portfolio site",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurphyStudebaker/MurphyStudebaker.github.io.git"
+  },
+  "author": "Murphy Studebaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MurphyStudebaker/MurphyStudebaker.github.io/issues"
+  },
+  "homepage": "https://github.com/MurphyStudebaker/MurphyStudebaker.github.io#readme",
+  "dependencies": {
+    "rough-notation": "^0.5.1"
+  }
+}

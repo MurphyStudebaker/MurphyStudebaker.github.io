@@ -167,6 +167,7 @@ body,
 a,
 p {
   background-color: var(--background);
+  line-height: 1.2;
   color: var(--primary);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -181,6 +182,7 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
   color: var(--primary);
+  line-height: 1;
 }
 
 .visually-hidden {
@@ -202,6 +204,10 @@ h6 {
 }
 
 .no-underline {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -289,7 +295,7 @@ footer a {
   line-height: 1.4;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   /* MOBILE STYLE ADJUSTMENTS */
   .heading {
     font-size: 3rem;
