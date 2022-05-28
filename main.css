@@ -300,6 +300,12 @@ footer a {
   line-height: 1.4;
 }
 
+.previously {
+  padding-top: 1rem;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
 @media (max-width: 750px) {
   /* MOBILE STYLE ADJUSTMENTS */
   .heading {
