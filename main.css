@@ -185,6 +185,10 @@ h6 {
   line-height: 1;
 }
 
+a {
+  font-size: inherit;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -236,7 +240,7 @@ a svg {
   display: grid;
   min-height: 100%;
   grid-template-columns: 1fr min(60ch, 100%) 1fr;
-  /* grid-template-rows: calc(24px + 2 * var(--spacing)) 1fr; */
+  grid-template-rows: calc(24px + 2 * var(--spacing)) 1fr;
 }
 
 main {
