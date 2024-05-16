@@ -18,17 +18,17 @@ const a4 = annotate(document.querySelector("#link-4"), {
   type: "underline",
   color: "var(--tertiary)",
 });
-const a5 = annotate(document.querySelector("#link-5"), {
-  type: "underline",
-  color: "var(--tertiary)",
-});
-const projects = annotate(document.querySelector("#projects"), {
-  type: "bracket",
-  color: "var(--tertiary)",
-  brackets: ["left", "right"],
-});
+// const a5 = annotate(document.querySelector("#link-5"), {
+//   type: "underline",
+//   color: "var(--tertiary)",
+// });
+// const projects = annotate(document.querySelector("#projects"), {
+//   type: "bracket",
+//   color: "var(--tertiary)",
+//   brackets: ["left", "right"],
+// });
 
-const ag = annotationGroup([a1, a2, a3, a4, a5, projects]);
+const ag = annotationGroup([a1, a2, a3, a4]);
 ag.show();
 
 var canvas = document.getElementById("canvas"),
