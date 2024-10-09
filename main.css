@@ -273,7 +273,7 @@ header svg {
   width: 24px;
   stroke-width: 2;
 }
-
+/* 
 .projects {
   display: flex;
   gap: var(--spacing);
@@ -285,7 +285,7 @@ header svg {
   display: flex;
   gap: var(--spacing);
   flex-wrap: wrap;
-}
+} */
 
 footer {
   /* padding: calc(var(--spacing) * 2); */
